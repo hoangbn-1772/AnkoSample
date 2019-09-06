@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_8"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_goto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_32"
+        android:text="@string/start_screen" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_goto"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/show_dialog" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_logging"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_dialog"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/logging" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_misc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_logging"
+        android:text="@string/anko_misc" />
+</RelativeLayout>
+
